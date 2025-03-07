@@ -4,31 +4,22 @@ import { motion } from "framer-motion";
 import { Section } from "@/components/Section";
 import { SectionTitle } from "@/components/SectionTitle";
 import { 
-  FaCode,
   FaDatabase,
   FaTools,
   FaUsers,
   FaBrain,
-  FaLaptopCode,
-  FaGitAlt,
   FaNodeJs,
   FaReact,
-  FaServer,
   FaPython
 } from "react-icons/fa";
 import { 
-  SiCplusplus,
   SiJavascript,
-  SiTypescript,
   SiNextdotjs,
-  SiMongodb,
-  SiPostgresql,
   SiTensorflow,
   SiPytorch,
   SiScikitlearn,
   SiPandas,
   SiNumpy,
-  SiKeras,
   SiOpencv,
   SiJupyter
 } from "react-icons/si";
@@ -161,7 +152,7 @@ export function SkillsSection() {
             initial="initial"
             whileHover="hover"
             animate="initial"
-            variants={cardHoverVariants}
+            custom={cardHoverVariants}
           >
             <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-600">{category.title}</h3>
             <div className="space-y-4">

@@ -7,7 +7,7 @@ import Link from "next/link";
 type ButtonVariant = "primary" | "secondary" | "accent" | "outline";
 type ButtonSize = "sm" | "md" | "lg";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, MotionProps {
+interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, keyof MotionProps> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   icon?: React.ReactNode;
@@ -15,6 +15,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, Mot
   fullWidth?: boolean;
   href?: string;
   external?: boolean;
+  motionProps?: MotionProps;
+  children?: React.ReactNode;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -29,6 +31,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       className = "",
       href,
       external = false,
+      motionProps = {},
       ...props
     },
     ref
@@ -60,16 +63,17 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       </>
     );
 
-    const motionProps = {
+    const defaultMotionProps = {
       whileHover: { scale: 1.02 },
       whileTap: { scale: 0.98 },
       transition: { duration: 0.2 },
-      ...props,
     };
+
+    const combinedMotionProps = { ...defaultMotionProps, ...motionProps };
 
     if (href) {
       return (
-        <motion.div {...motionProps}>
+        <motion.div {...combinedMotionProps}>
           <Link
             href={href}
             className={buttonStyles}
@@ -83,7 +87,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     }
 
     return (
-      <motion.button ref={ref} className={buttonStyles} {...motionProps}>
+      <motion.button ref={ref} className={buttonStyles} {...props} {...combinedMotionProps}>
         {content}
       </motion.button>
     );

@@ -36,7 +36,7 @@ export function ContactSection() {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       setIsSubmitted(true);
       setFormState({ name: "", email: "", message: "" });
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -87,7 +87,7 @@ export function ContactSection() {
         >
           <h3 className="text-2xl font-bold mb-4">Contact Me</h3>
           <p className="text-muted-foreground mb-8">
-            I'm actively seeking software development opportunities with a focus on Machine Learning and AI. Whether it's building innovative ML solutions, developing full-stack applications, or collaborating on challenging technical projects, I'm excited to bring my expertise to your team.
+            I&apos;m actively seeking software development opportunities with a focus on Machine Learning and AI. Whether it&apos;s building innovative ML solutions, developing full-stack applications, or collaborating on challenging technical projects, I&apos;m excited to bring my expertise to your team.
           </p>
 
           <div className="space-y-6">
@@ -166,7 +166,7 @@ export function ContactSection() {
               </svg>
               <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
               <p className="text-muted-foreground mb-6">
-                Thank you for reaching out. I'll get back to you as soon as possible.
+                Thank you for reaching out. I&apos;ll get back to you as soon as possible.
               </p>
               <Button
                 onClick={() => setIsSubmitted(false)}

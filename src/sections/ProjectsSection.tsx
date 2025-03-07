@@ -6,7 +6,6 @@ import { Section } from "@/components/Section";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Button } from "@/components/Button";
 import { FaArrowRight, FaTimes } from "react-icons/fa";
-import Image from "next/image";
 
 interface Project {
   id: string;

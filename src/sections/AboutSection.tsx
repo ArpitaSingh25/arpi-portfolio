@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Section } from "@/components/Section";
 import { SectionTitle } from "@/components/SectionTitle";
-import Image from "next/image";
 
 export function AboutSection() {
   const educationItems = [
@@ -45,15 +44,24 @@ export function AboutSection() {
         >
           <div className="relative w-full aspect-square max-w-md mx-auto md:mx-0 overflow-hidden rounded-2xl shadow-xl">
             {/* Profile image */}
-            <div className="relative w-full h-full">
-              <Image
-                src="/profile-image.jpg"
-                alt="Arpita - Software Developer"
-                fill
-                sizes="(max-width: 768px) 100vw, 500px"
-                className="object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
-                priority
-              />
+            <div className="w-full h-full bg-gradient-to-br from-blue-500/20 to-violet-500/20 rounded-2xl flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="120"
+                height="120"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-blue-500/70"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
             </div>
             
             {/* Decorative elements */}
@@ -93,10 +101,10 @@ export function AboutSection() {
           >
             <h3 className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-600 inline-block">Professional Summary</h3>
             <p className="text-muted-foreground mb-6">
-              I'm a software developer and ML engineer with a focus on creating intelligent and scalable solutions. My expertise lies in developing machine learning models and full-stack applications that solve real-world problems efficiently.
+              I&apos;m a software developer and ML engineer with a focus on creating intelligent and scalable solutions. My expertise lies in developing machine learning models and full-stack applications that solve real-world problems efficiently.
             </p>
             <p className="text-muted-foreground mb-6">
-              With strong foundations in Python, Machine Learning, and Web Development, I approach each project with a deep understanding of both technical requirements and business objectives. I'm passionate about implementing AI solutions and creating robust applications that make a meaningful impact.
+              With strong foundations in Python, Machine Learning, and Web Development, I approach each project with a deep understanding of both technical requirements and business objectives. I&apos;m passionate about implementing AI solutions and creating robust applications that make a meaningful impact.
             </p>
           </motion.div>
 
