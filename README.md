@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arpita's Product Design Portfolio
+
+A modern, visually striking portfolio website optimized for a Product Design internship application at Uber. The website highlights design skills, showcases relevant projects, and demonstrates an understanding of Uber's design principles and product ecosystem.
+
+## Features
+
+- **Responsive Design**: Fully responsive layout that works beautifully on all devices
+- **Dark/Light Mode**: Toggle between dark and light themes
+- **Smooth Animations**: Subtle animations and transitions using Framer Motion
+- **Accessible UI**: Built with accessibility in mind
+- **Modern Tech Stack**: Next.js, TypeScript, Tailwind CSS, Framer Motion
+- **Performance Optimized**: Fast loading times and smooth interactions
+
+## Sections
+
+1. **Hero Section**: Bold typography with animated background inspired by Uber's map interface
+2. **About Me**: Professional summary, education, and design philosophy
+3. **Skills & Technologies**: Visual representation of design tools, prototyping tools, research methodologies, and development skills
+4. **Projects**: Showcase of case studies with detailed information
+5. **Uber-Specific Project**: Concept project related to Uber's rider experience
+6. **Contact**: Professional contact form with social links
+
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Icons**: React Icons
+- **UI Components**: Custom components with accessibility in mind
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18.17 or later
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/arpita-portfolio.git
+   cd arpita-portfolio
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Adding Your Own Projects
 
-## Deploy on Vercel
+1. Update the project data in `src/sections/ProjectsSection.tsx`
+2. Add your project images to the `public/images` directory
+3. Update the image paths in the project data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Updating Personal Information
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Update the personal information in each section component
+2. Replace placeholder images with your own in the `public/images` directory
+
+## Deployment
+
+This project can be easily deployed to Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/arpita-portfolio)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Design inspiration from Uber's design system
+- Icons from [React Icons](https://react-icons.github.io/react-icons/)
+- Animations powered by [Framer Motion](https://www.framer.com/motion/)
