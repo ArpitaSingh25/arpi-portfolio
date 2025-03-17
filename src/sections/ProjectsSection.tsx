@@ -40,7 +40,7 @@ export function ProjectsSection() {
       ],
       outcome: "Achieved 91% accuracy in classifying brain tumors, outperforming traditional machine learning models and standalone deep learning techniques. Successfully reduced diagnostic dependency on radiologists through automated feature extraction.",
       learnings: "This project deepened my understanding of medical image processing, deep learning architectures, and the importance of model interpretability in healthcare applications.",
-      images: ["/images/brain-tumor-1.jpg", "/images/brain-tumor-2.jpg", "/images/brain-tumor-3.jpg"],
+      images: ["/Brain Tumor.jpeg", "/images/brain-tumor-2.jpg", "/images/brain-tumor-3.jpg"],
       tags: ["Deep Learning", "Computer Vision", "Healthcare AI", "Python", "TensorFlow"],
       prototypeLink: "https://github.com/ArpitaSingh25/Brain-Tumor-Detection"
     },
