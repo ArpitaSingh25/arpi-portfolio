@@ -45,7 +45,8 @@ export function AboutSection() {
           <div className="relative w-full aspect-square max-w-md mx-auto md:mx-0 overflow-hidden rounded-2xl shadow-xl">
             {/* Profile image */}
             <div className="w-full h-full bg-gradient-to-br from-blue-500/20 to-violet-500/20 rounded-2xl flex items-center justify-center">
-              <img src="/path/public/profile-image.jpg" alt="Profile" className="w-full h-full object-cover rounded-2xl" />
+              <img src="/profile-image.jpg" alt="Profile" className="w-full h-full object-cover rounded-2xl" />
+
             </div>
 
             {/* Decorative elements */}
