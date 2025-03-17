@@ -87,7 +87,7 @@ export function ContactSection() {
         >
           <h3 className="text-2xl font-bold mb-4">Contact Me</h3>
           <p className="text-muted-foreground mb-8">
-            I&apos;m actively seeking software development opportunities with a focus on Machine Learning and AI. Whether it&apos;s building innovative ML solutions, developing full-stack applications, or collaborating on challenging technical projects, I&apos;m excited to bring my expertise to your team.
+            I&apos;m actively seeking software development opportunities with a focus on Full Stack Development , Machine Learning and AI. Whether it&apos;s building innovative ML solutions, developing full-stack applications, or collaborating on challenging technical projects, I&apos;m excited to bring my expertise to your team.
           </p>
 
           <div className="space-y-6">
