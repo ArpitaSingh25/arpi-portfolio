@@ -117,7 +117,7 @@ export function ContactSection() {
             <div>
               <h4 className="text-lg font-semibold mb-3">Resume</h4>
               <Button
-                href="/resume.pdf"
+                href="/Arpita_Resume.pdf"
                 variant="outline"
                 icon={<FaDownload />}
                 iconPosition="left"
