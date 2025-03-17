@@ -44,7 +44,7 @@ export function Header() {
             transition={{ duration: 0.5 }}
             className="text-foreground"
           >
-            Arpita | Software Developer & ML Engineer
+            Arpita | Software & Full Stack Developer
           </motion.span>
         </Link>
 
