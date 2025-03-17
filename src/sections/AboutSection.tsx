@@ -30,7 +30,7 @@ export function AboutSection() {
     <Section id="about">
       <SectionTitle
         title="About Me"
-        subtitle="Software Developer and ML Engineer with a passion for building innovative solutions and intelligent systems."
+        subtitle="Software and Full Stack Developer with a passion for building innovative solutions and intelligent systems."
         highlight
       />
 
@@ -86,10 +86,10 @@ export function AboutSection() {
           >
             <h3 className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-600 inline-block">Professional Summary</h3>
             <p className="text-muted-foreground mb-6">
-              I&apos;m a software developer and ML engineer with a focus on creating intelligent and scalable solutions. My expertise lies in developing machine learning models and full-stack app[...]
+              I&apos;m a software developer and a Full Stack Developer with a focus on creating intelligent and scalable solutions. My expertise encompasses the development of full-stack applications.         
             </p>
             <p className="text-muted-foreground mb-6">
-              With strong foundations in Python, Machine Learning, and Web Development, I approach each project with a deep understanding of both technical requirements and business objectives. I[...]
+              With strong foundations in C/C++, Python, Machine Learning , and Web Development, I approach each project with a deep understanding of both technical requirements and business objectives. 
             </p>
           </motion.div>
 
